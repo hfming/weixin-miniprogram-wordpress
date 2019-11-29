@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="51643478-b363-47d1-8550-b3f5dc4c174e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +51,34 @@
       <option name="presentableId" value="Default" />
       <updated>1575014590499</updated>
       <workItem from="1575014592259" duration="4000" />
-      <workItem from="1575014622308" duration="3383000" />
+      <workItem from="1575014622308" duration="4122000" />
     </task>
+    <task id="LOCAL-00001" summary="wordpress 微慕小程序精简版上传">
+      <created>1575018082529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1575018082530</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="wordpress 微慕小程序精简版上传" />
+    <option name="LAST_COMMIT_MESSAGE" value="wordpress 微慕小程序精简版上传" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="567" y="119" key="CommitChangelistDialog2" timestamp="1575018791434">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="567" y="119" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1575018791434" />
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2" timestamp="1575018768870">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="553" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1575018768870" />
     <state x="93" y="93" width="1733" height="863" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1575016642015">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
