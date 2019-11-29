@@ -1,0 +1,80 @@
+<!--
+/*
+ * 
+ * WordPres版微信小程序
+ * author: jianbo
+ * organization: 守望轩  www.watch-life.net
+ * github:    https://github.com/iamxjb/winxin-app-watch-life.net
+ * 技术支持微信号：iamxjb
+ * 开源协议：MIT
+ * Copyright (c) 2017 https://www.watch-life.net All rights reserved.
+ *
+ */-->
+<import src="../../templates/common-list.wxml" />
+<import src="../../templates/copyright.wxml" />
+<import src="../../templates/login-popup.wxml" />
+
+<!-- 用户信息 -->
+<view class="userinfo">
+
+  <!-- 头像 -->
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+
+  <view class='userinfo_right'>
+    <!-- 昵称 -->
+    <text class="userinfo_nickname">{{openid !='' ? userInfo.nickName : '登录'}}</text>
+    <view class='userinfo_des_box'>
+      <!-- 角色 -->
+      <text class="userinfo_role" decode="{{true}}">{{openid !='' ? userLevel.levelName : '角色'}}</text>
+      <!-- 更新信息按钮 -->
+      <view class="btn-update" wx:if="{{openid !=''}}">
+        <button open-type="getUserInfo" bindgetuserinfo="refresh">更新信息</button>
+      </view>
+      <!-- 退出登录按钮 -->
+      <view class="btn-exit" catchtap="exit">{{openid !='' ? '退出登录' : '清除缓存'}}</view>
+    </view>
+  </view>
+
+</view>
+
+<!-- tab选项卡 -->
+<view class="tab-bar">
+  <block wx:for="{{topBarItems}}" wx:key="id">
+    <view class="tab-item {{item.selected ? 'tab-Selected': '' }}" catchtap="onTapTag" id="{{item.id}}">
+      <text>{{item.name}}</text>
+    </view>
+  </block>
+</view>
+
+<!-- 文章列表 -->
+<view class="list_container">
+
+  <block wx:key="id" wx:for="{{readLogs}}">
+    <view class="list-item" index="{{index}}" id="{{item[0]}}" data-itemtype="{{item[2]}}" catchtap="redictDetail">
+      <text>{{index + 1}}. {{item[1]}}</text>
+    </view>
+  </block>
+
+  <!-- 没有文章时的提示信息 -->
+  <view class="tips" style="display:{{shownodata}}">
+    <view >没有相关文章~</view>
+    <view class="copyright" style="display:{{(shownodata === 'none') ? 'block' : 'none'}}">
+      <template is="tempCopyright" data="{{webSiteName:webSiteName,domain:domain}}"/>
+    </view>
+  </view>
+
+  <!-- 登录框 -->
+  <template is="login-popup" data="{{show: isLoginPopup, userInfo: userInfo}}"></template>
+
+  <!-- 无法访问网络 -->
+  <view class="showerror" style="display:{{showerror}}">
+    <image src="../../images/cry80.png" style="height:100rpx;width:100rpx"></image>
+    <view class="errortext">暂时无法访问网络，请下拉刷新...</view>
+  </view>
+
+  <!-- 版权信息 -->
+  <view class="copyright" style="display:{{(shownodata === 'none') ? 'block' : 'none'}}">
+     <template is="tempCopyright" data="{{webSiteName:webSiteName,domain:domain}}"/>
+  </view>
+
+</view>

@@ -1,0 +1,9 @@
+<template name="tempCopyright">
+<view align="center">
+	备案/许可证编号:浙ICP备18048626号-2 版权所有©2018-2019 青泉博客 | MiniProgram By 微慕 | Theme By Hestia | Powered By WordPress.
+	<view>
+		<image src="https://hfm-wp.oss-cn-hangzhou.aliyuncs.com/%E5%85%AC%E5%AE%89%E7%BD%91%E5%A4%87%E6%A1%88/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" style="height:10px;width:20px;" mode="aspectFit"> </image>
+		<p>浙公网安备 33032702000865号 </p>
+	</view>		 
+</view> 
+</template>
