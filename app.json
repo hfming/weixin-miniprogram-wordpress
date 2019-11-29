@@ -24,8 +24,6 @@
         "commentbackgroundColor": "下拉刷新的背景色",
         "backgroundColor":"#0000",
 
-        "enablePullDownRefresh":true,
-
         "commentnavigationBarTextStyle": "导航栏文字样式",
         "navigationBarTextStyle": "black",
         
